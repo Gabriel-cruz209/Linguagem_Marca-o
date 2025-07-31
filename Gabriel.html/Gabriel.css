@@ -1,0 +1,143 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo e container geral */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 30px;
+}
+
+/* Container geral da página */
+#container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Container do topo com imagem e texto lado a lado */
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Imagem à esquerda */
+.topo img {
+  width: 280px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+/* Texto à direita da imagem */
+.topo .descricao {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #005eff;
+}
+
+h3 {
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Menu com botões */
+.menu {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu button {
+  background-color: #005eff;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #0041c4;
+}
+
+/* Seções escondidas por padrão */
+.hidden {
+  display: none;
+}
+
+/* Estilo das seções visíveis */
+#Hobbies, #SobreMim, #Tabela, #Links, #Contato {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  margin-top: 20px;
+}
+
+/* Estilizando a tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #e9f0ff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Links */
+a {
+  color: #005eff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#data {
+  position: absolute;
+  top: 15px;
+  left: 1150px;
+  font-size: 14px;
+  color: #333;
+  background-color: #e0e7ff; /* azul claro sutil */
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
