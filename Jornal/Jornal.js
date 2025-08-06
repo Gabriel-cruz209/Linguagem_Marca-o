@@ -14,3 +14,5 @@ function inicio() {
 function esporte() {
     window.location.href = "JornalEsp.html"
 }
+
+ document.getElementById("data").textContent = new Date().toLocaleDateString("pt-BR");

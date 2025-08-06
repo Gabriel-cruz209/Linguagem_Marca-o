@@ -126,3 +126,69 @@ h2 {
         font-size: 20px;
     }
 }
+
+#data {
+  position: absolute;
+  top: 15px;
+  left: 1150px;
+  font-size: 14px;
+  color: #333;
+  background-color: #e0e7ff; /* azul claro sutil */
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  font-weight: 500;
+}
+
+/* Ajuste para imagem, título e parágrafo em proporções harmônicas */
+.imagem {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.titulo1 {
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    max-width: 100%;
+}
+
+.paragrafo {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 100%;
+}
+
+/* Melhor organização das seções de notícia */
+.container > div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .container > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .titulo1, .paragrafo {
+        text-align: center;
+    }
+}
