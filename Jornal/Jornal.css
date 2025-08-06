@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Barra de data */
+#data {
+    background-color: #e50914;
+    color: white;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Container central */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    color: #e50914;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e50914;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Menu */
+.menu {
+    margin-bottom: 30px;
+}
+
+.menu button {
+    background-color: white;
+    color: #e50914;
+    border: 2px solid #e50914;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+.menu button:hover {
+    background-color: #e50914;
+    color: white;
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 24px;
+    margin: 30px 0 20px 0;
+    border-left: 5px solid #e50914;
+    padding-left: 10px;
+    color: #333;
+}
+
+/* Notícia */
+.container > div {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.container img {
+    width: 240px;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.container h3 {
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .menu button {
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
