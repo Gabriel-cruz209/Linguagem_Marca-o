@@ -133,7 +133,7 @@ h2 {
   left: 1150px;
   font-size: 14px;
   color: #333;
-  background-color: #e0e7ff; /* azul claro sutil */
+  background-color: #ffe0e0; /* azul claro sutil */
   padding: 6px 12px;
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0,0,0,0.1);
@@ -191,4 +191,8 @@ h2 {
     .titulo1, .paragrafo {
         text-align: center;
     }
+}
+
+.a {
+    color: #e50914;
 }
