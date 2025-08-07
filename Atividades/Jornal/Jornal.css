@@ -196,3 +196,19 @@ h2 {
 .a {
     color: #e50914;
 }
+
+/* Tamanhos ainda mais aumentados das notícias */
+.imagem {
+    width: 400px;
+    height: 225px;
+}
+
+.titulo1 {
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+.paragrafo {
+    font-size: 20px;
+    line-height: 1.8;
+}
