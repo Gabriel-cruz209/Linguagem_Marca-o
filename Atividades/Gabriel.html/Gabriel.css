@@ -6,97 +6,82 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Fundo e container geral */
+/* Fundo da página */
 body {
-  background-color: #f4f4f4;
-  color: #333;
-  padding: 30px;
+  background-color: #f3f6fa;
+  color: #2c2c2c;
+  padding: 40px 20px;
 }
 
-/* Container geral da página */
+/* Container principal */
 #container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.06);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-/* Container do topo com imagem e texto lado a lado */
+/* Seção do topo: imagem e descrição */
 .topo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 40px;
   flex-wrap: wrap;
-  margin-bottom: 30px;
 }
 
-/* Imagem à esquerda */
 .topo img {
-  width: 280px;
+  width: 260px;
   height: auto;
-  border-radius: 16px;
+  border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
 }
 
-/* Texto à direita da imagem */
 .topo .descricao {
   flex: 1;
-  min-width: 250px;
+  min-width: 260px;
 }
 
-/* Títulos */
+/* Título e subtítulo */
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #005eff;
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin-bottom: 12px;
 }
 
 h3 {
   font-weight: 400;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  color: #444;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
-/* Menu com botões */
-.menu {
-  width: 100%;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.menu button {
-  background-color: #005eff;
-  color: white;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.menu button:hover {
-  background-color: #0041c4;
-}
-
-/* Seções escondidas por padrão */
-.hidden {
-  display: none;
-}
-
-/* Estilo das seções visíveis */
-#Hobbies, #SobreMim, #Tabela, #Links, #Contato {
-  width: 100%;
-  background-color: #fff;
+/* Seções do conteúdo */
+section {
+  background-color: #ffffff;
+  padding: 25px 30px;
   border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
-  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-/* Estilizando a tabela */
+/* Título de cada seção */
+section h2 {
+  font-size: 1.8rem;
+  color: #005eff;
+  border-left: 5px solid #005eff;
+  padding-left: 12px;
+}
+
+/* Tabela personalizada */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -104,18 +89,18 @@ table {
 }
 
 th, td {
-  border: 1px solid #ccc;
-  padding: 12px;
+  border: 1px solid #ddd;
+  padding: 14px;
   text-align: left;
 }
 
 th {
-  background-color: #e9f0ff;
+  background-color: #eef3ff;
   font-weight: 600;
 }
 
 tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #f7f9fc;
 }
 
 /* Links */
@@ -128,16 +113,77 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Data fixa no canto superior */
 #data {
   position: absolute;
-  top: 15px;
-  left: 1150px;
+  top: 20px;
+  right: 20px;
   font-size: 14px;
   color: #333;
-  background-color: #e0e7ff; /* azul claro sutil */
+  background-color: #e0e7ff;
   padding: 6px 12px;
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0,0,0,0.1);
   font-weight: 500;
+  z-index: 10;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .topo img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
+
+@keyframes pulsar {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 94, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 94, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 rgba(0, 94, 255, 0.4);
+  }
+}
+
+.botao-destaque {
+  background-color: #005eff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: pulsar 2s infinite;
+}
+
+.botao-destaque:hover {
+  background-color: #0041c4;
+  transform: scale(1.05);
+}
+
+.botao-destaque:active {
+  transform: scale(0.96);
+}
