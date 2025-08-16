@@ -3,32 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Projeto-Igreja/CSS/PagMatricula.css">
+    <link rel="shortcut icon" href="/Projeto-Igreja/ICONS/logo_igreja-removebg-preview.png" type="image/x-icon">
     <title>Paroquia Santo Antônio</title>
 </head>
 <body>
     <div class="container">
+        <button class="voltar" onclick="inicio()">Voltar</button>
         <h1>Paroquia Santo Antonio</h1>
 
         <div class="menu">
-            <button onclick="sec('perse')">Perseverança</button>
-            <button onclick="sec('acolito')">Acolito/coroinha</button>
-            <button onclick="sec('crisma')">Crisma</button>
-            <button onclick="sec('jc')">JC</button>
-            <button onclick="sec('casais')">Encontro de Casais</button>
-            <button onclick="sec('ministro')">Ministro</button>
-            <button onclick="sec('pastorais')">Pastorais</button>
+            <button onclick="seca('perse')">Perseverança</button>
+            <button onclick="seca('acolito')">Acolito/coroinha</button>
+            <button onclick="seca('crisma')">Crisma</button>
+            <button onclick="seca('jc')">JC</button>
+            <button onclick="seca('casais')">Encontro de Casais</button>
+            <button onclick="seca('ministro')">Ministro</button>
+            <button onclick="seca('pastorais')">Pastorais</button>
         </div>
         <div id="perse" class="hidden">
             <h2>Perseverança</h2>
-            <img src="" alt="">
-            <p>descrição</p>
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" placeholder="Digite o nome">
+            <img src="/Projeto-Igreja/IMG/imagem-igreja.jpg" alt="">
+            <p>descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse ab aliquam dolores, numquam porro dolorem cumque obcaecati hic nisi ipsum dolorum necessitatibus vero aspernatur molestias quos quasi. Aperiam, amet.</p>
+
+            <div class="inscrição">
+                <h2>Inscrição Perseverança</h2>
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="dataN">Data Nascimento: </label>
+                    <input type="date" id="dataN">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular: </label>
+                    <input type="number" id="celular" placeholder="Digite o celular">
+                </div>
+            </div>
+
+            <button onclick="ins()">Inscrever-se</button>
+        </div>
+        <div id="acolito" class="hidden">
+            <h2>Acolito</h2>
+            <img src="/Projeto-Igreja/IMG/imagem-igreja.jpg" alt="">
+            <p>descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse ab aliquam dolores, numquam porro dolorem cumque obcaecati hic nisi ipsum dolorum necessitatibus vero aspernatur molestias quos quasi. Aperiam, amet.</p>
+
+            <div class="inscrição">
+                <h2>Inscrição Acolito</h2>
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="dataN">Data Nascimento: </label>
+                    <input type="date" id="dataN">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular: </label>
+                    <input type="number" id="celular" placeholder="Digite o celular">
+                </div>
+            </div>
+
+            <button onclick="ins()">Inscrever-se</button>
+        </div>
+        <div id="crisma" class="hidden">
+            <h2>Crisma</h2>
+            <img src="/Projeto-Igreja/IMG/imagem-igreja.jpg" alt="">
+            <p>descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse ab aliquam dolores, numquam porro dolorem cumque obcaecati hic nisi ipsum dolorum necessitatibus vero aspernatur molestias quos quasi. Aperiam, amet.</p>
+
+            <div class="inscrição">
+                <h2>Inscrição Crisma</h2>
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="dataN">Data Nascimento: </label>
+                    <input type="date" id="dataN">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular: </label>
+                    <input type="number" id="celular" placeholder="Digite o celular">
+                </div>
+            </div>
+
+            <button onclick="ins()">Inscrever-se</button>
+        </div>
+        <div id="jc" class="hidden">
+            <h2>JC</h2>
+            <img src="/Projeto-Igreja/IMG/imagem-igreja.jpg" alt="">
+            <p>descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse ab aliquam dolores, numquam porro dolorem cumque obcaecati hic nisi ipsum dolorum necessitatibus vero aspernatur molestias quos quasi. Aperiam, amet.</p>
+
+            <div class="inscrição">
+                <h2>Inscrição JC</h2>
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="dataN">Data Nascimento: </label>
+                    <input type="date" id="dataN">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular: </label>
+                    <input type="number" id="celular" placeholder="Digite o celular">
+                </div>
+            </div>
+
+            <button onclick="ins()">Inscrever-se</button>
+        </div>
+        <div id="casais" class="hidden">
+            <h2>Encontro de Casais</h2>
+            <img src="/Projeto-Igreja/IMG/imagem-igreja.jpg" alt="">
+            <p>descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse ab aliquam dolores, numquam porro dolorem cumque obcaecati hic nisi ipsum dolorum necessitatibus vero aspernatur molestias quos quasi. Aperiam, amet.</p>
+
+            <div class="inscrição">
+                <h2>Inscrição Encontro de Casais</h2>
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="dataN">Data Nascimento: </label>
+                    <input type="date" id="dataN">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular: </label>
+                    <input type="number" id="celular" placeholder="Digite o celular">
+                </div>
+            </div>
+
+            <button onclick="ins()">Inscrever-se</button>
+        </div>
+        <div id="ministro" class="hidden">
+            <h2>Ministro</h2>
+            <img src="/Projeto-Igreja/IMG/imagem-igreja.jpg" alt="">
+            <p>descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse ab aliquam dolores, numquam porro dolorem cumque obcaecati hic nisi ipsum dolorum necessitatibus vero aspernatur molestias quos quasi. Aperiam, amet.</p>
+
+            <div class="inscrição">
+                <h2>Inscrição Ministro</h2>
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="dataN">Data Nascimento: </label>
+                    <input type="date" id="dataN">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular: </label>
+                    <input type="number" id="celular" placeholder="Digite o celular">
+                </div>
+            </div>
+
+            <button onclick="ins()">Inscrever-se</button>
+        </div>
+        <div id="pastorais" class="hidden">
+            <h2>Pastorais</h2>
+            <img src="/Projeto-Igreja/IMG/imagem-igreja.jpg" alt="">
+            <p>descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse ab aliquam dolores, numquam porro dolorem cumque obcaecati hic nisi ipsum dolorum necessitatibus vero aspernatur molestias quos quasi. Aperiam, amet.</p>
+
+            <div class="inscrição">
+                <h2>Inscrição Pastorais</h2>
+                <div class="form-group">
+                    <label for="pastoral">Escolha uma pastoral:</label>
+                    <select id="pastoral" name="pastoral">
+                        <option value="">Selecione...</option>
+                        <option value="liturgia">Liturgia</option>
+                        <option value="musica">Música</option>
+                        <option value="catequese">Carentes</option>
+                        <option value="acolhida">Familiar</option>
+                        <option value="saude">Pastoral da Saúde</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite o nome">
+                </div>
+                <div class="form-group">
+                    <label for="dataN">Data Nascimento: </label>
+                    <input type="date" id="dataN">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" placeholder="Digite o email">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular: </label>
+                    <input type="number" id="celular" placeholder="Digite o celular">
+                </div>
             </div>
 
             <button onclick="ins()">Inscrever-se</button>
         </div>
     </div>
+
+    <script src="/Projeto-Igreja/JS/Pag.js"></script>
 </body>
 </html>

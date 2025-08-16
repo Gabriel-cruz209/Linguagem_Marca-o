@@ -1,0 +1,291 @@
+/* ============================
+   RESET E BASE
+   ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5; /* fundo cinza claro */
+  color: #222; /* texto principal preto suave */
+  line-height: 1.6;
+  background-image: url('https://www.transparenttextures.com/patterns/dark-fish-skin.png');
+  background-size: auto;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+/* ============================
+   CONTAINER E TÍTULO
+   ============================ */
+.conteiner {
+  max-width: 2000px;
+  margin: auto;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.conteiner h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #111; /* preto puro */
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* ============================
+   MENU DE BOTÕES
+   ============================ */
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.opcoes button {
+  flex: 1 1 220px;
+  background: linear-gradient(135deg, #333, #555); /* cinza escuro degradê */
+  color: white;
+  border: none;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.opcoes button:hover {
+  background: #000; /* preto no hover */
+  transform: translateY(-4px);
+}
+
+/* ============================
+   SEÇÃO INÍCIO
+   ============================ */
+#inicio {
+  margin-bottom: 3rem;
+}
+
+.topo1 {
+  display: block;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.topo1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  margin-bottom: 1rem;
+  border: 4px solid #ccc; /* cinza claro */
+}
+
+.topo1 p {
+  font-size: 1.1rem;
+  text-align: justify;
+  color: #333;
+  line-height: 1.7;
+}
+
+.topo2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.forma {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.forma:hover {
+  transform: translateY(-5px);
+}
+
+.forma a {
+    color:#000
+}
+
+.forma h2 {
+  color: #000;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* ============================
+   COMUNICADOS
+   ============================ */
+.comunicado, #comunicados {
+  margin-bottom: 3rem;
+}
+
+.comu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.comunicado h2, #comunicados h2 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.forma2:hover{
+    transform: translateY(-5px);
+}
+
+.forma2 {
+  background: #f9f9f9; /* cinza quase branco */
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  border-left: 4px solid #333; /* barra preta lateral */
+  max-width: 420px;
+}
+
+.forma2 h4 {
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+/* ============================
+   CRONOGRAMA DAS MISSAS
+   ============================ */
+.cronograma {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.cronograma h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.forma3 {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.forma3:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+}
+
+.cronograma .forma3 h4 {
+    color: #111;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.cronograma .forma3 p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Eventos */
+.eventos, #eventos {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.eventos h2, #eventos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.eventos-cards, .eventos .lista, #eventos .lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.forma4 {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: all .3s ease;
+}
+
+.forma4:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+}
+
+.forma4 h4 {
+    color: #111;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/* ============================
+   CLASSE DE OCULTAÇÃO
+   ============================ */
+.hidden {
+  display: none;
+}
+
+/* ============================
+   RESPONSIVIDADE
+   ============================ */
+@media (max-width: 768px) {
+  .opcoes button {
+    flex: 1 1 100%;
+    font-size: 1rem;
+  }
+
+  .topo1 {
+    flex-direction: column;
+  }
+  
+  .conteiner {
+    padding: 1.5rem;
+    margin: 10px;
+  }
+  
+  .conteiner h1 {
+    font-size: 2rem;
+  }
+}
+

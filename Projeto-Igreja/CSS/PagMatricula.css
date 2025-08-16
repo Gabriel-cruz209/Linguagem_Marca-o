@@ -1,0 +1,198 @@
+/* ============================
+   RESET E BASE
+   ============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4; /* Cinza claro */
+    color: #222; /* Preto suave */
+    line-height: 1.6;
+    background-attachment: fixed;
+}
+
+/* ============================
+   CONTAINER E TÍTULO
+   ============================ */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95); /* Branco */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #000; /* Preto */
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+}
+
+/* ============================
+   BOTÃO DE VOLTAR E MENU
+   ============================ */
+.container > button, 
+.menu button, 
+.voltar,
+#perse button, #acolito button, #crisma button, 
+#jc button, #casais button, #ministro button, #pastorais button {
+    background: linear-gradient(135deg, #333, #555); /* Preto para cinza escuro */
+    color: white;
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.container > button:hover, 
+.menu button:hover, 
+.voltar:hover,
+#perse button:hover, #acolito button:hover, #crisma button:hover, 
+#jc button:hover, #casais button:hover, #ministro button:hover, #pastorais button:hover {
+    background: #000; /* Preto sólido */
+    transform: translateY(-4px);
+}
+
+.voltar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  z-index: 1000;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.menu button {
+    flex: 1 1 220px;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+
+/* ============================
+   SEÇÕES
+   ============================ */
+#perse, #acolito, #crisma, #jc, #casais, #ministro, #pastorais {
+    text-align: left;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #fff; /* Branco */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #333; /* Cinza escuro */
+    font-size: 2rem;
+    border-bottom: 2px solid #ccc; /* Cinza claro */
+    padding-bottom: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    color: #444; /* Cinza médio */
+}
+
+/* ============================
+   INSCRIÇÃO
+   ============================ */
+.inscrição {
+    background: #f9f9f9; /* Cinza muito claro */
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 6px solid #333; /* Preto */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+.inscrição h2 {
+    color: #000; /* Preto */
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #555; /* Cinza médio */
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Cinza claro */
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+    background-color: #fff; /* Branco */
+}
+
+input:focus, select:focus {
+    border-color: #333; /* Preto */
+    background-color: #fafafa;
+}
+
+/* ============================
+   OCULTAÇÃO
+   ============================ */
+.hidden {
+    display: none;
+}
+
+/* ============================
+   RESPONSIVIDADE
+   ============================ */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+    
+    .container {
+        padding: 1.5rem;
+        margin: 10px;
+    }
+
+    .menu button {
+        flex: 1 1 100%;
+        font-size: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
