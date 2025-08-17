@@ -7,3 +7,45 @@
   <option value="acolhida">Acolhida</option>
   <option value="saude">Pastoral da Saúde</option>
 </select>
+
+.eventos, #eventos {
+    padding: 20px;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.eventos h2, #eventos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.eventos-cards, .eventos .lista, #eventos .lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.forma4 {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    transition: all .3s ease;
+}
+
+.forma4:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+}
+
+.forma4 h4 {
+    color: #111;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}

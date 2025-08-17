@@ -1,58 +1,49 @@
-/* ============================
+/* ============================ 
    RESET E BASE
    ============================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Georgia", "Times New Roman", serif;
 }
 
 body {
-    background-color: #f4f4f4; /* Cinza claro */
-    color: #222; /* Preto suave */
+    background-color: #fcfbf9; /* bege suave */
+    color: #3b2a1a; /* marrom escuro */
     line-height: 1.6;
     background-attachment: fixed;
+    background-blend-mode: multiply;
 }
 
-/* ============================
+/* ============================ 
    CONTAINER E TÍTULO
    ============================ */
-.container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 2rem;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.95); /* Branco */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 
 h1 {
-    font-size: 2.8rem;
-    color: #000; /* Preto */
+    font-size: 3rem;
+    color: saddlebrown;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-/* ============================
+/* ============================ 
    BOTÃO DE VOLTAR E MENU
    ============================ */
 .container > button, 
 .menu button, 
-.voltar,
 #perse button, #acolito button, #crisma button, 
 #jc button, #casais button, #ministro button, #pastorais button {
-    background: linear-gradient(135deg, #333, #555); /* Preto para cinza escuro */
-    color: white;
+    background: rgba(0, 0, 0, 0);
+    color: #000000;
     border: none;
     padding: 1.2rem 2rem;
     border-radius: 12px;
     cursor: pointer;
     margin-bottom: 1rem;
     font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .container > button:hover, 
@@ -60,17 +51,16 @@ h1 {
 .voltar:hover,
 #perse button:hover, #acolito button:hover, #crisma button:hover, 
 #jc button:hover, #casais button:hover, #ministro button:hover, #pastorais button:hover {
-    background: #000; /* Preto sólido */
-    transform: translateY(-4px);
+    transform: scale(1.05);
 }
 
 .voltar {
-  position: fixed;
   top: 20px;
   left: 20px;
   padding: 10px 16px;
   font-size: 1rem;
   z-index: 1000;
+  background-color: #5c3317;
 }
 
 .menu {
@@ -82,28 +72,35 @@ h1 {
 }
 
 .menu button {
-    flex: 1 1 220px;
+    flex: 0 0 220px;
     padding: 1.2rem;
     font-size: 1.2rem;
 }
 
-/* ============================
+/* ============================ 
    SEÇÕES
    ============================ */
 #perse, #acolito, #crisma, #jc, #casais, #ministro, #pastorais {
     text-align: left;
     margin-top: 2rem;
     padding: 1.5rem;
-    background-color: #fff; /* Branco */
+    background-color: #fff8f0;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-left: 6px solid saddlebrown;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+#perse:hover, #acolito:hover, #crisma:hover, 
+#jc:hover, #casais:hover, #ministro:hover, #pastorais:hover {
+    transform: translateY(-5px);
 }
 
 h2 {
     margin-bottom: 1rem;
-    color: #333; /* Cinza escuro */
+    color: saddlebrown;
     font-size: 2rem;
-    border-bottom: 2px solid #ccc; /* Cinza claro */
+    border-bottom: 2px solid #deb887;
     padding-bottom: 0.5rem;
 }
 
@@ -111,29 +108,31 @@ img {
     max-width: 100%;
     border-radius: 12px;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    border: 5px solid saddlebrown;
 }
 
 p {
     margin-bottom: 1.5rem;
     text-align: justify;
-    color: #444; /* Cinza médio */
+    color: #3b2a1a;
+    line-height: 1.8;
 }
 
-/* ============================
+/* ============================ 
    INSCRIÇÃO
    ============================ */
 .inscrição {
-    background: #f9f9f9; /* Cinza muito claro */
+    background: #fff8f0;
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 20px;
-    border-left: 6px solid #333; /* Preto */
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+    border-left: 6px solid saddlebrown;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 .inscrição h2 {
-    color: #000; /* Preto */
+    color: saddlebrown;
     margin-bottom: 15px;
 }
 
@@ -145,32 +144,32 @@ label {
     display: block;
     font-weight: bold;
     margin-bottom: 6px;
-    color: #555; /* Cinza médio */
+    color: #5c3317;
 }
 
 input, select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc; /* Cinza claro */
+    border: 1px solid #deb887;
     border-radius: 8px;
     outline: none;
     transition: border 0.3s;
-    background-color: #fff; /* Branco */
+    background-color: #fff;
 }
 
 input:focus, select:focus {
-    border-color: #333; /* Preto */
-    background-color: #fafafa;
+    border-color: saddlebrown;
+    background-color: #fdf6f0;
 }
 
-/* ============================
+/* ============================ 
    OCULTAÇÃO
    ============================ */
 .hidden {
     display: none;
 }
 
-/* ============================
+/* ============================ 
    RESPONSIVIDADE
    ============================ */
 @media (max-width: 768px) {
@@ -189,10 +188,35 @@ input:focus, select:focus {
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
     
     h2 {
         font-size: 1.5rem;
     }
+}
+
+.divisoria {
+  width: 100%;
+  height: 50px;
+  background-color: saddlebrown;
+  margin: 20px 0;
+  border-radius: 4px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+}
+
+.container h1{
+    display: flex;
+    justify-content: center;
+}
+
+.top img{
+  max-width: 1200px;
+  height: 800px;
+  margin: auto;
+}
+
+.inscrição button{
+    background-color: chartreuse;
+    border-radius: 30%;
 }
