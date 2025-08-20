@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #fcfbf9; /* fundo bege suave */
+  background-color: #fffaf3; /* fundo bege suave */
   color: #3b2a1a; /* marrom escuro */
   line-height: 1.6;
   background-size: auto;
@@ -46,7 +46,7 @@ body {
 .opcoes button {
   background-color: rgba(240, 255, 255, 0);
   flex: 0 0 220px;
-  color: #000000;
+  color: #ffffff;
   border: none;
   padding: 1.2rem;
   font-size: 1.2rem;
@@ -67,29 +67,66 @@ body {
 }
 
 .topo1 {
-  display: block;
-  gap: 1rem;
+  display: flex; /* lado a lado */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   margin-bottom: 2rem;
+  flex-wrap: wrap; /* quebra em telas menores */
 }
 
-.topo1 img {
-  display: block;
+.com {
+  flex: 1; /* ocupa metade da largura */
+  max-width: 700px;
+  margin-left: 30px; /* afasta da borda esquerda */
+}
+
+.com img {
   width: 100%;
-  height: 50%;
+  height: auto;
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  margin-bottom: 1rem;
-  margin: auto;
-  max-width: 1700px;
-  height: 600px;
 }
 
-.topo1 p {
-  font-size: 1.2rem;
+.descricao {
+  flex: 1; /* ocupa metade da largura */
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 6px solid saddlebrown;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
   text-align: justify;
-  color: #3b2a1a;
-  line-height: 1.8;
+  margin-right: 30px; /* também dá respiro da direita */
 }
+
+.descricao p {
+  font-size: 1.3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+               'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #3b2a1a;
+}
+
+/* ============================
+   RESPONSIVIDADE
+   ============================ */
+@media (max-width: 768px) {
+  .topo1 {
+    flex-direction: column; /* empilha no celular */
+  }
+
+  .com {
+    margin-left: 0; /* remove afastamento no mobile */
+    max-width: 100%;
+  }
+
+  .descricao {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+
 
 /* ============================
    BLOCO DE INFORMAÇÕES
@@ -139,7 +176,7 @@ body {
   flex-direction: row;
   gap: 20px;
   padding-left: 20px;
-  background-color: #5c3317;
+  background-color: #ac8063;
   padding-top: 20px;
   border-radius: 3%;
 }
@@ -269,7 +306,7 @@ body {
    ============================ */
 .divisoria {
   width: 100%;
-  height: 50px;
+  height: 75px;
   background-color: saddlebrown;
   margin: 20px 0;
   border-radius: 4px;
@@ -300,34 +337,14 @@ body {
   .conteiner h1 {
     font-size: 2.2rem;
   }
-}
 
+  .topo1 {
+    flex-direction: column; /* empilha no celular */
+  }
 
-.topo1 p{
-  max-width: 50%;
-  right: 500px;
-  font-size: x-large;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-.descricao {
-  background: #fff8f0;
-  padding: 2rem;
-  margin: 2rem auto; /* Centraliza horizontalmente */
-  max-width: 1200px; /* Limita largura para não ficar gigante */
-  text-align: center; /* Centraliza o texto */
-  border-radius: 12px;
-  border-left: 6px solid saddlebrown;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
-
-.descricao p {
-  font-size: 1.5rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-  color: #3b2a1a;
+  .descricao {
+    max-width: 100%;
+  }
 }
 
 .comu1 {
@@ -335,5 +352,19 @@ body {
   flex-direction: row;
   gap: 20px;
   max-width: 90%;
-  right: 500px;
+}
+
+.rodape {
+  background-color: #5c3317; /* marrom escuro */
+  color: #fffaf3; /* bege claro */
+  text-align: center; /* centraliza o texto */
+  padding: 15px;
+  font-size: 1rem;
+  margin-top: 2rem;
+  border-top: 4px solid saddlebrown;
+  font-family: "Georgia", "Times New Roman", serif;
+
+  /* ocupa toda a largura inferior */
+  width: 100%;
+  display: block;
 }

@@ -171,6 +171,7 @@ input:focus, select:focus {
 .inscrição button {
     background-color: chartreuse;
     border-radius: 30%;
+    border-color: chartreuse;
 }
 
 .conteudo {
