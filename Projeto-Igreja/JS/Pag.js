@@ -11,6 +11,8 @@ function sec(secao){
     document.getElementById('inicio').classList.add('hidden');
     document.getElementById('eventos').classList.add('hidden');
     document.getElementById('cronograma').classList.add('hidden');
+    document.getElementById('matriculas').classList.add('hidden');
+    document.getElementById('pastorais').classList.add('hidden');
 
     document.getElementById(secao).classList.remove('hidden');
 }

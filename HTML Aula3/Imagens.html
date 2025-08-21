@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <picture>
+        <source media="(max-width: 500px)" srcset="moto.jpg" type="image/jpg">
+        <img src="moto.jpg" alt="A imagen flexivel funcional">
+
+        <source media="(max-width: 1000px)" srcset="moto.jpg" type="image/jpg">
+        <img src="moto.jpg" alt="A imagem flexivel funciona">
+
+        <!-- pequeno -->
+        <source media="(max-width: 400px)" srcset="moto.p.png" type="image/png">
+        <img src="moto.p.png" alt="A imagen flexivel funcional">
+
+        <!-- medio -->
+        <source media="(max-width: 400px)" srcset="moto.m.png" type="image/png">
+        <img src="moto.m.png" alt="A imagen flexivel funcional">
+
+        <!-- Grande -->
+        <source media="(max-width: 400px)" srcset="moto.g.png" type="image/png">
+        <img src="moto.g.png" alt="A imagen flexivel funcional">
+    </picture>
+
+    <audio preload="metadata"></audio>
+</body>
+</html>
