@@ -191,6 +191,7 @@ body {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  
 }
 
 .comunicado{
@@ -208,7 +209,7 @@ body {
 
 .forma2 {
   background: #fffaf3;
-  padding: 1.2rem;
+  padding: 20px;
   border-radius: 10px;
   margin-bottom: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
@@ -232,8 +233,7 @@ body {
 .cronograma {
   padding: 30px;
   max-width: 1200px;
-  margin: 0 auto; /* centraliza na tela */
-  text-align: center;
+  text-align: left;
 }
 
 .cronograma h2 {
@@ -243,7 +243,6 @@ body {
   border-bottom: 3px solid #deb887;
   display: inline-block;
   padding-bottom: 8px;
-  text-align: center;
   font-weight: bold;
 }
 
@@ -281,7 +280,7 @@ body {
 @media (max-width: 768px) {
   .comu2 {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
 
   .forma3 {
