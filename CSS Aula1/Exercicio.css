@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Pixel Emulator';
+    src: url('caminho/para/pixel_emulator.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #000000; 
+    color: #ffffff;
+    font-family: 'Pixel Emulator', sans-serif;
+}
+
+
+h1 {
+    color: #ff00cc; 
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 2px 2px #00ffff;
+    border-color: #000000;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffff00; 
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h3{
+    color: #ffff00;
+    font-size: 1.5rem;
+    border-color: #000000;
+}
+
+h4{
+    color: #ff00cc;
+}
+
+.cards {
+    background-color: #1a1a1a; 
+    color: #00ffff; 
+    padding: 10px;
+    border-radius: 5%;
+    height: 500px;
+    width: 400px;
+    border: 2px solid #ff00cc; 
+    box-shadow: 0 0 10px #ffff00; 
+}
+
+.cards img {
+    height: 200px;
+    width: 350px;
+    border-radius: 5%;
+    padding: 20px;
+    border: 2px solid #00ffff; 
+}
+
+.cards iframe {
+    height: 200px;
+    width: 350px;
+    border-radius: 5%;
+    padding: 20px;
+    border: 2px solid #00ffff; 
+}
+
+.cards:hover{
+   transform: translateY(-7px);
+}
+.com {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 100px;
+}
+
+.rodape {
+    text-align: center;
+    color: #ff00cc; 
+    margin-top: 50px;
+    border-top: 1px solid #00ffff;
+    padding-top: 20px;
+}
+
+.rodape h2{
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 30px;
+}
+
+.rodape a{
+    color: #ff00cc;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .cards {
+        width: 100%;
+        height: auto;
+    }
+
+    .com {
+        gap: 20px;
+    }
+
+    .rodape {
+        font-size: 1.2rem;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cards {
+        width: 100%;
+        height: auto;
+    }
+
+    .com {
+        gap: 15px;
+    }
+
+    .rodape {
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+}
