@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
-:root {
-    /* Paleta */
-    --neutro-claro: #F8F9FA;
-    --neutro-escuro: #333333;
-    --dourado: #C5A253;
-    --azul-petroleo: #005F73;
-    --verde-oliva: #556B2F;
-    --lilas-suave: #C8A2C8;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -18,39 +8,37 @@
 
 body {
     font-family: "Space Grotesk", sans-serif;
-    background-color: var(--neutro-claro);
-    color: var(--neutro-escuro);
+    background-color: #F8F9FA;
+    color: #333333;
     line-height: 1.6;
     padding: 20px;
 }
 
-/* ---------- Títulos ---------- */
 h1, h2, h3 {
-    font-weight: 600;
     margin-bottom: 15px;
 }
 
 h1 {
     text-align: center;
-    color: var(--dourado);
+    color: #C5A253;
+    font-size: 4rem;
 }
 
 h2 {
     text-align: center;
     font-size: 2rem;
-    color: var(--azul-petroleo);
+    color: #005F73;
 }
 
 h3 {
-    color: var(--verde-oliva);
+    color: #556B2F;
 }
 
-/* ---------- Header e Navegação ---------- */
 header {
     text-align: center;
     margin-bottom: 20px;
     padding: 15px 0;
-    border-bottom: 2px solid var(--dourado);
+    border-bottom: 2px solid #C5A253;
 }
 
 nav {
@@ -61,7 +49,7 @@ nav {
 }
 
 nav button {
-    background-color: var(--neutro-escuro);
+    background-color: #333333;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -71,25 +59,25 @@ nav button {
     font-weight: 500;
     transition: all 0.3s ease;
 }
-button:hover {
+
+nav button:hover {
     transform: translateY(-4px);
-    background-color: var(--dourado);
-    color: var(--neutro-escuro);
+    background-color: #C5A253;
+    color: #333333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ---------- Produtos ---------- */
 .produtos {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 25px;
     margin-top: 30px;
 }
 
 .produto {
-    background-color: var(--dourado);
-    color: var(--neutro-escuro);
+    background-color: #C5A253;
+    color: #333333;
     width: 280px;
     padding: 15px;
     border-radius: 12px;
@@ -106,9 +94,8 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.produto button{
-    border-radius: 7px;
-    background-color: rgb(0, 0, 0);
+.produto button {
+    background-color: #000000;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -119,33 +106,32 @@ button:hover {
     transition: all 0.3s ease;
 }
 
-
-.produto:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+.produto button:hover {
+    transform: translateY(-4px);
+    background-color: #005F73;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ---------- Links ---------- */
 a {
     text-decoration: none;
-    color: var(--azul-petroleo);
+    color: #005F73;
     font-weight: 500;
     transition: color 0.3s, transform 0.2s;
 }
 
 a:hover {
     transform: translateY(-3px);
-    color: var(--lilas-suave);
+    color: #C8A2C8;
 }
 
-/* ---------- Footer ---------- */
 footer {
     margin-top: 60px;
     text-align: center;
-    color: var(--neutro-escuro);
-    border-top: 2px solid var(--dourado);
+    color: #333333;
+    border-top: 2px solid #C5A253;
     padding: 20px 0;
-    background-color: var(--dourado);
+    background-color: #C5A253;
     font-weight: 500;
 }
 
@@ -154,13 +140,12 @@ footer {
 }
 
 .soma {
-    padding-top: 20px
+    padding-top: 20px;
 }
 
-.soma button{
-    border-radius: 7px;
-    background-color: rgb(0, 255, 38);
-    color: #000000;
+.soma button {
+    background-color: #000000;
+    color: #ffffff;
     border: none;
     border-radius: 8px;
     width: 250px;
@@ -168,4 +153,11 @@ footer {
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s ease;
+}
+
+.soma button:hover {
+    transform: translateY(-4px);
+    background-color: #005F73;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
