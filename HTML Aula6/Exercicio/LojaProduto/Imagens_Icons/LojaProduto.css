@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Paleta */
+    --neutro-claro: #F8F9FA;
+    --neutro-escuro: #333333;
+    --dourado: #C5A253;
+    --azul-petroleo: #005F73;
+    --verde-oliva: #556B2F;
+    --lilas-suave: #C8A2C8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: var(--neutro-claro);
+    color: var(--neutro-escuro);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ---------- Títulos ---------- */
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--dourado);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--azul-petroleo);
+}
+
+h3 {
+    color: var(--verde-oliva);
+}
+
+/* ---------- Header e Navegação ---------- */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    border-bottom: 2px solid var(--dourado);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+nav button {
+    background-color: var(--neutro-escuro);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    width: 110px;
+    height: 42px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+button:hover {
+    transform: translateY(-4px);
+    background-color: var(--dourado);
+    color: var(--neutro-escuro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Produtos ---------- */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.produto {
+    background-color: var(--dourado);
+    color: var(--neutro-escuro);
+    width: 280px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.produto img {
+    height: 160px;
+    width: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.produto button{
+    border-radius: 7px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    width: 110px;
+    height: 42px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+
+.produto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* ---------- Links ---------- */
+a {
+    text-decoration: none;
+    color: var(--azul-petroleo);
+    font-weight: 500;
+    transition: color 0.3s, transform 0.2s;
+}
+
+a:hover {
+    transform: translateY(-3px);
+    color: var(--lilas-suave);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    color: var(--neutro-escuro);
+    border-top: 2px solid var(--dourado);
+    padding: 20px 0;
+    background-color: var(--dourado);
+    font-weight: 500;
+}
+
+.t {
+    text-align: left;
+}
